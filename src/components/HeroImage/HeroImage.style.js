@@ -1,21 +1,23 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    background: url(${({ image }) => image}), var(--darkGrey);
-    background-size: 100%, cover;
-    background-position: center;
-    height: 600px;
-    position: relative;
-    animation: animateHeroImage 1s;
+  background: url(${({ image }) => image}), var(--darkGrey);
+  background-size: 100%, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  animation: animateHeroImage 1s;
 
-    @keyframes anumateHeroImage {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+  @keyframes anumateHeroImage {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export const Content = styled.div`
